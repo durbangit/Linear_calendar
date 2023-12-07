@@ -157,3 +157,54 @@ body {
    padding: 10px 0;
    background-color: rgb(215, 215, 215);
 }
+
+
+@media screen and (max-width: 367px) {
+   body {
+      font-size: 14px;
+   }
+   .content__wrap {
+      padding: 0;
+      border: 0;
+   }
+   .calendar {
+      border: 0;
+   }
+   .calendar__list-item {
+      width: 34px;
+   }
+
+   .calendar__next,
+   .calendar__previous {
+      font-size: 12px;
+   }
+
+   .calendar__month {
+      font-size: 16px;
+   }
+
+   .calendar__list {
+      justify-content: space-around;
+   }
+}
+
+@media screen and (max-width: 315px) {
+   .title {
+      font-size: 18px;
+   }
+   .calendar__next,
+   .calendar__previous {
+      font-size: 10px;
+   }
+   .calendar__list-item {
+      width: 30px;
+      padding: 8px 0;
+      font-size: 12px;
+   }
+}
+
+@media screen and (max-width: 286px) {
+   .calendar__list-item {
+      width: 29px;
+   }
+}
