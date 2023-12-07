@@ -1,0 +1,153 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #383838;
+}
+
+.wrapper {
+   height: 100vh;
+   /* overflow: hidden; */
+
+   display: flex;
+   flex-direction: column;
+}
+
+.header {
+   padding: 10px 0;
+   background-color: rgb(255, 232, 178);
+}
+
+.footer__row,
+.header__row {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container {
+   max-width: 1140px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.title {
+   font-size: 24px;
+}
+.content {
+   flex-grow: 1;
+   padding: 20px 0;
+}
+
+.content__wrap {
+   display: flex;
+   justify-content: center;
+
+   padding: 15px;
+   border: 1px solid #cacaca;
+   border-radius: 6px;
+}
+
+/* ⊗jsPrStLC Линейный календарь */
+
+.calendar {
+   width: 300px;
+   border: 1px solid tan;
+   border-radius: 6px;
+   padding: 15px;
+}
+
+/* скрываем четыре инпута */
+.calendar--hidden {
+   display: none;
+}
+.calendar__btns {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 15px;
+}
+.calendar__next,
+.calendar__previous {
+   border: 0;
+   border-radius: 4px;
+   outline: 1px solid #cfcfcf;
+   background-color: white;
+   text-transform: uppercase;
+   cursor: pointer;
+
+   padding: 10px 15px;
+}
+.calendar__next:focus,
+.calendar__previous:focus {
+   background-color: #fff0db;
+}
+.calendar__body {
+   border: 1px solid tan;
+   border-radius: 6px;
+   padding-bottom: 1px;
+}
+.calendar__month {
+   padding: 15px;
+   border-bottom: 1px solid tan;
+
+   text-align: center;
+   font-size: 18px;
+   text-transform: uppercase;
+}
+.calendar__weeks {
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid tan;
+   padding: 10px 0;
+   text-align: center;
+}
+.calendar__item-week {
+   border: 1px solid #fce1bf;
+   border-top: 0;
+   border-bottom: 0;
+   width: 100%;
+}
+.calendar__item-week:first-child {
+   border-left: 0;
+}
+.calendar__item-week:last-child {
+   border-right: 0;
+}
+.calendar__list {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 1px;
+   list-style: none;
+}
+.calendar__list-item {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   width: 36px;
+   background-color: #fce1bf;
+   border-radius: 6px;
+   padding: 10px 0;
+   margin: 1px;
+   text-align: center;
+}
+.calendar__list-item--grey {
+   background-color: #e4e4e4;
+}
+.calendar__list-item--active {
+   background-color: rgb(244, 197, 135);
+   color: white;
+}
+
+/* footer */
+
+.footer {
+   padding: 10px 0;
+   background-color: rgb(215, 215, 215);
+}
